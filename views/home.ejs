@@ -6,14 +6,64 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<link rel="stylesheet" href="../public/styles/symantec.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" />
+	<link rel="stylesheet" href="../public/styles/styles.css" />
+	<link rel="stylesheet" href="../public/styles/typewriter.css" />
 	<link rel='icon' href="../public/pics/favi.png">
 	<meta name="google-site-verification" content="HbiLlM8b3-bNelWLcmn6aj5k7XMT15tsySm2_STkEnw" />
 </head>
+<style>
+	@media (min-height: 10px) {
+  .ui.footer.form-page { /* Increased specificity for SO snippet priority */
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+</style>
 <body>
-	<div class="ui fluid container" style="margin-top:50px;"><center>
-		<img class="ui small circular image" src="../public/pics/profile.png">
-	      <h2 style="color: #3b5998;font-family: 'Alegreya',serif;font-size: 30px;font-weight: bold;margin-right: 2px;">Hi! I'm Saurabh Shubham</h2>
+	<div class="ui container" style="margin-top:50px;"><center>
+		<div class="ui grid">
+			<div class="sixteen wide column">
+				<img class="ui medium circular image" src="../public/pics/profile3.png" alt="Saurabh Shubham" style="width: 200px; height: 200 px;">
+				<h2 style="color: #3b5998;font-family: 'Alegreya',serif;font-size: 30px;font-weight: bold;margin-right: 2px;">Hi! I'm Saurabh Shubham.</h2>
+			</div>
+                  <div class="sixteen wide column">
+				<div class="text"><p>I like to </p>
+				<p>
+					<span class="word wisteria">read.</span>
+					<span class="word belize">write.</span>
+					<span class="word pomegranate">code.</span>
+				</p>
+			     </div>
+			  </div>
+			  <div class="sixteen wide column" style="margin-top:20px;">
+				<a href="https://www.facebook.com/saurabh0612" target="_blank"><img src="../public/pics/social-icons/facebook.png" class="social-icons"></a>
+				<a href="https://twitter.com/iamsaurabh33" target="_blank"><img src="../public/pics/social-icons/twitter.png" class="social-icons"></a>
+				<a href="https://www.linkedin.com/in/saurabh-shubham/" target="_blank"><img src="../public/pics/social-icons/linkedin.png" class="social-icons"></a>
+				<a href="https://github.com/Saurabh3333" target="_blank"><img src="../public/pics/social-icons/github-logo.png" class="social-icons"></a>
+				<a href="https://www.quora.com/profile/Saurabh-Shubham-7" target="_blank"><img src="../public/pics/social-icons/quora.png" class="social-icons"></a>
+				<a href="https://stackoverflow.com/users/6766158/saurabh-shubham" target="_blank"><img src="../public/pics/social-icons/stack-overflow.png" class="social-icons"></a>
+				<a href="mailto:saurabh.friday@gmail.com?Subject=From%20saurabhshubham.com%20website" target="_blank"><img src="../public/pics/social-icons/envelope.png" class="social-icons"></a>
+			  </div>
+		</div>	  
+		<div class="ui equal width stackable grid" style="margin-top: 50px;">
+				<a href="/cv" class="orange column hello" style="margin:5px;">
+					<p>CV</p>
+				</a>
+				<a href="/blog" class="blue column" style="margin:5px;">
+					<p>Blog</p>
+				</a>
+				<a href="/projects" class="green column" style="margin:5px;">
+					<p>Projects</p>
+				</a>
+		</div>  
+	</center></div><center>
+	<div class="ui vertical footer segment form-page">
+			<div class="ui container">
+					&copy; Saurabh Shubham 2018 | Made with <span id="heart" style="color: red;">&hearts;</span> in India.
+			</div>
 	</div></center>
 </body>
+<script type="text/javascript" src="../public/js/typewriter.js"></script>
 </html>
