@@ -1,6 +1,7 @@
 const functions = require('firebase-functions');
 const express = require('express');
 var path = require('path');
+var http = require('http');
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -11,15 +12,18 @@ app.get('/', (req, res) => {
 });
 
 app.get('/cv', (req, res) => {
-    res.send("Under construction");
+    res.writeHead(301, {
+        "Location": "https://drive.google.com/file/d/1sCgK13EXfN44u_dz7F_5jSMAtQILDa-T/view?usp=sharing"
+    });
+    res.end();
 });
 
-app.get('/blog', (req, res) => {
-    res.send("Under construction");
+app.get('/blogs', (req, res) => {
+    res.render('blogs');
 });
 
 app.get('/projects', (req, res) => {
-    res.send("Under construction");
+    res.render('projects');
 });
 
 
