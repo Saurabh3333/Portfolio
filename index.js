@@ -18,12 +18,16 @@ app.get('/cv', (req, res) => {
     res.end();
 });
 
-app.get('/blogs', (req, res) => {
-    res.render('blogs');
+app.get('/beta-version', (req, res) => {
+    res.render('beta-home');
 });
 
-app.get('/projects', (req, res) => {
-    res.render('projects');
+app.get('/beta-version/blogs', (req, res) => {
+    res.render('beta-blogs');
+});
+
+app.get('/beta-version/projects', (req, res) => {
+    res.render('beta-projects');
 });
 
 
